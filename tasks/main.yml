@@ -12,13 +12,6 @@
   ansible.builtin.package:
     name: "{{ acme_certificate_packages }}"
 
-- name: Install pip requirements
-  ansible.builtin.pip:
-    name:
-      - dnspython
-      - cryptography
-  changed_when: false
-
 - name: Create acme group
   ansible.builtin.group:
     name: "{{ acme_certificate_group }}"

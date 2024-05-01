@@ -2,5 +2,7 @@
 acme_certificate_packages:
   - openssl
   - openssh-client
+  - python3-dnspython
+  - python3-cryptography
 acme_certificate_storedir: /usr/local/share/ca-certificates/letsencrypt
 acme_os_ca_file: /etc/ssl/certs/ca-certificates.crt
